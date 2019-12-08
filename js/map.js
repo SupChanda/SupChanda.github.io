@@ -296,7 +296,7 @@ class Map{
 	   let button2 = d3.select("#year").select('svg').append('g').append('image')
 						.attr('x', 880)
 						.attr('y', -10)
-						.attr("xlink:href", d=>"data/flags-mini/NEXT.png")
+						.attr("xlink:href", d=>"https://SupChanda.github.io/data/flags-mini/NEXT.png")
 						.attr("width", 40)
                         .attr("height", 100)
 						.on('click', d=>this.video())
