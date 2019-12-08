@@ -289,14 +289,14 @@ class Map{
 					   // .attr('y',30)
 					   // .attr('height',20)
 					   // .attr('width',100)
-					   // .attr("href", d=>"data/flags-mini/NEXT.png")
+					   // .attr("xlink:href", d=>"data/flags-mini/NEXT.png")
 					   // //.attr('fill','yellow')
 					   // .on('click', d=>this.video())
 					   
 	   let button2 = d3.select("#year").select('svg').append('g').append('image')
 						.attr('x', 880)
 						.attr('y', -10)
-						.attr("xlink: href",d=> "data/flags-mini/NEXT.png")
+						.attr("xlink:href", d=>"data/flags-mini/NEXT.png")
 						.attr("width", 40)
                         .attr("height", 100)
 						.on('click', d=>this.video())
@@ -358,6 +358,8 @@ class Map{
 	   d3.select("#infopanel").select('svg').remove()
 	   d3.select('#textCategories').select('svg').remove();
 	   d3.select('#donutChart').select('svg').remove();
+	   d3.select("#compareBlock").select('svg').remove();
+	   
     let year=parseInt(d3.select('#yearname').select('.yearselecter').attr('cx'));
 	d3.select('#yearname').selectAll('circle').attr('class','none').attr('fill','red');
 	year=(year-30)/30 + 1990 +1;
@@ -386,7 +388,8 @@ class Map{
 					 
 					////console.log(j,data[j]);
 					d3.select('#'+this.hdi[j].Country_Code)
-						.attr('fill',"rgb(" +"0, " + color(parseFloat(this.hdi[j][year.toString()]))   + ",0 )");
+						.attr('fill',"rgb(" +"0, " + color(parseFloat(this.hdi[j][year.toString()]))   + ",0 )")
+						.attr('class','countries');
 					
 					
 				}	
@@ -400,7 +403,8 @@ class Map{
 					 
 					////console.log(j,data[j]);
 					d3.select('#'+this.hdi[j].Country_Code)
-						.attr('fill',"rgb(" +"255, " + color(parseFloat(this.hdi[j][year.toString()]))   + ",0 )");
+						.attr('fill',"rgb(" +"255, " + color(parseFloat(this.hdi[j][year.toString()]))   + ",0 )")
+						.attr('class','countries');
 					
 					
 				}
