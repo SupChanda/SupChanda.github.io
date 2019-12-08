@@ -225,6 +225,7 @@ class Map{
 						   d3.select('#textCategories').select('svg').remove();
 						   d3.select('#donutChart').select('svg').remove()
 						   d3.select('#LineChart').select('svg').remove()
+						   d3.select("#compareBlock").select('svg').remove();
 						   ////console.log('year is coming fine: ',yrSel)
 						   d3.selectAll('circle').attr('class','none').attr('fill','red');
 						   ////console.log('d3 select',d3.select(this),d,typeof(d))
