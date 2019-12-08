@@ -383,7 +383,7 @@ class donutChart{
 						.attr('pointer-events','none')
 						;
 						
-						
+					let BACK_BUTTON = 'back_button'	
 						d3.select("#donutChart")
 						.select('svg')
 						.append('g')
@@ -392,7 +392,7 @@ class donutChart{
 						.append('image')
 						.attr('x',-200)
 						.attr('y',-18)
-						.attr("xlink:href", d=>"data/flags-mini/BACK_BUTTON.png")
+						.attr("xlink:href", d=>"data/flags-mini/" + BACK_BUTTON.toLowerCase()+ ".png")
 						.attr("width", 200)
                         .attr("height", 200)
 						// .on('mouseover',function(d){
