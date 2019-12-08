@@ -176,7 +176,7 @@ class Compare{
 			.text(subcatagory + ' values');
 			
 			svg.append("circle").attr("cx",900).attr("cy",60).attr("r", 6).style("fill", "red")
-			svg.append("circle").attr("cx",900).attr("cy",90).attr("r", 6).style("fill", "black")
+			svg.append("circle").attr("cx",900).attr("cy",90).attr("r", 6).style("fill", "steelblue")
 			svg.append("text").attr("x", 920).attr("y", 63).text(country1).style("font-size", "15px").attr("alignment-baseline","middle")
 			svg.append("text").attr("x", 920).attr("y", 93).text(country2).style("font-size", "15px").attr("alignment-baseline","middle")
 		  });
