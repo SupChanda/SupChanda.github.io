@@ -80,7 +80,7 @@ class Infopanel{
 						.delay(500)
 	                    .attr('x', 100)
 						.attr('y', 60)
-						.attr("xlink:href", d=>"data/flags-mini/"+d.Two_Letter_Country_Code.totoLowerCase()+".png")
+						.attr("xlink:href", d=>"data/flags-mini/"+d.Two_Letter_Country_Code.toLowerCase()+".png")
 						.attr("width", 150)
                         .attr("height", 100)
 						;
