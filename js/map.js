@@ -292,11 +292,11 @@ class Map{
 					   // .attr("xlink:href", d=>"data/flags-mini/NEXT.png")
 					   // //.attr('fill','yellow')
 					   // .on('click', d=>this.video())
-					   
+					   let next ='next'
 	   let button2 = d3.select("#year").select('svg').append('g').append('image')
 						.attr('x', 880)
 						.attr('y', -10)
-						.attr("xlink:href", d=>"data/flags-mini/next.png")
+						.attr("xlink:href", d=>"data/flags-mini/" +next.toLowerCase() + ".png")
 						.attr("width", 40)
                         .attr("height", 100)
 						.on('click', d=>this.video())
