@@ -28,7 +28,7 @@ class Map{
  
   let nworld = topojson.feature(world, world.objects.countries);
   
-  let tooltip = new Tooltip()
+  let tooltip = new Tooltip();
   let map = d3.select("#map").append('svg').attr('width',900).attr('height',600).attr("transform", "translate(" + 50 + ",0)").append('g');
         //draw the initial map
 		
