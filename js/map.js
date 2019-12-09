@@ -238,9 +238,8 @@ class Map{
 								   d3.select("#year"+ yearList[k].toString()).attr('r',6).attr('fill','red')
 							   }
 						   }
-							//console.log('yess I have selected i value: ',i)
+							console.log('yess I have selected i value: ',i)
 							let year=1990+i;
-							cons
 							if (optionSelected=='HDI'){
 								
 							let color = d3.scaleLinear()
