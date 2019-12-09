@@ -240,7 +240,7 @@ class Map{
 						   }
 							//console.log('yess I have selected i value: ',i)
 							let year=1990+i;
-							console.log('optionSelected: ',optionSelected)
+							console.log('optionSelected: ',optionSelected,optionSelected.length)
 							if (optionSelected=='HDI'){
 								
 							let color = d3.scaleLinear()
