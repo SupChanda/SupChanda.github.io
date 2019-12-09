@@ -225,7 +225,6 @@ class Map{
 						   d3.select('#textCategories').select('svg').remove();
 						   d3.select('#donutChart').select('svg').remove()
 						   d3.select('#LineChart').select('svg').remove()
-						   d3.select("#compareBlock").select('svg').remove();
 						   ////console.log('year is coming fine: ',yrSel)
 						   d3.selectAll('circle').attr('class','none').attr('fill','red');
 						   ////console.log('d3 select',d3.select(this),d,typeof(d))
@@ -240,7 +239,6 @@ class Map{
 						   }
 							//console.log('yess I have selected i value: ',i)
 							let year=1990+i;
-							console.log('optionSelected: ',optionSelected,optionSelected.length)
 							if (optionSelected=='HDI'){
 								
 							let color = d3.scaleLinear()
@@ -251,7 +249,8 @@ class Map{
 								////console.log(j,data[j].Country_Code,color(parseFloat(data[j][year.toString()])));
 								d3.select('#'+data[j].Country_Code)
 								
-								.attr('fill',"rgb(" +"0, " + color(parseFloat(data[j][year.toString()]))   + ",0 )");
+								.attr('fill',"rgb(" +"0, " + color(parseFloat(data[j][year.toString()]))   + ",0 )")
+								.attr('class','countries');
 							}
 							
 							}
