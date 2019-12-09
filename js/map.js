@@ -265,7 +265,8 @@ class Map{
 								////console.log(j,data[j].Country_Code,color(parseFloat(data[j][year.toString()])));
 								d3.select('#'+data[j].Country_Code)
 								
-								.attr('fill',"rgb(" +"255, " + color(parseFloat(data[j][year.toString()]))   + ",0 )");
+								.attr('fill',"rgb(" +"255, " + color(parseFloat(data[j][year.toString()]))   + ",0 )")
+								.attr('class','countries');
 							  }
 							}
 						   
