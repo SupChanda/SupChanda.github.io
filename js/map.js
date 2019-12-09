@@ -241,17 +241,17 @@ class Map{
 							//console.log('yess I have selected i value: ',i)
 							let year=1990+i;
 							
-							if (this.selectedVal=='HDI'){
+							if (optionSelected=='HDI'){
 								
 							let color = d3.scaleLinear()
 							  .domain([0,1])
 							.range([0,255]);
-							for (let j=0;j<this.hdi.length;j++){
+							for (let j=0;j<data.length;j++){
 								 
 								////console.log(j,data[j].Country_Code,color(parseFloat(data[j][year.toString()])));
-								d3.select('#'+this.hdi[j].Country_Code)
+								d3.select('#'+data[j].Country_Code)
 								
-								.attr('fill',"rgb(" +"0, " + color(parseFloat(this.hdi[j][year.toString()]))   + ",0 )");
+								.attr('fill',"rgb(" +"0, " + color(parseFloat(data[j][year.toString()]))   + ",0 )");
 							}
 							
 							}
